@@ -4,3 +4,16 @@
   line-height: var(--leading-normal);
   font-weight: var(--weight-regular);
 }
+
+.body-link {
+  font-size: var(--text-base);
+  font-family: var(--font-body);
+  line-height: var(--leading-normal);
+  font-weight: var(--weight-regular);
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+.body-link:hover{
+  color: grey;
+}
