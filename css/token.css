@@ -1,0 +1,12 @@
+:root {
+  --color-bg: #ffffff;
+  --color-text: #111111;
+  --color-accent: #your-brand-color;
+  --spacing-md: 1.5rem;
+  --font-heading: 'Your Font', sans-serif;
+}
+
+[data-theme="dark"] {
+  --color-bg: #111111;
+  --color-text: #f0f0f0;
+}
