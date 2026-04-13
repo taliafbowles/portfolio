@@ -1,12 +1,202 @@
 :root {
-  --color-bg: #ffffff;
-  --color-text: #111111;
-  --color-accent: #your-brand-color;
-  --spacing-md: 1.5rem;
-  --font-heading: 'Your Font', sans-serif;
+  --font-display:  system-ui, serif;
+  --font-body:     system-ui, sans-serif;
+  --font-mono:     system-ui, monospace;
+ 
+  --text-xs:   0.75rem;    /* 12px */
+  --text-sm:   0.875rem;   /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-md:   1.125rem;   /* 18px */
+  --text-lg:   1.375rem;   /* 22px */
+  --text-xl:   1.75rem;    /* 28px */
+  --text-2xl:  2.25rem;    /* 36px */
+  --text-3xl:  3rem;       /* 48px */
+  --text-4xl:  4rem;       /* 64px */
+ 
+  --leading-tight:  1.1;
+  --leading-snug:   1.3;
+  --leading-normal: 1.6;
+  --leading-loose:  1.85;
+ 
+  --tracking-tight: -0.03em;
+  --tracking-normal: 0em;
+  --tracking-wide:  0.06em;
+  --tracking-wider: 0.12em;
+ 
+  --weight-light:   300;
+  --weight-regular: 400;
+  --weight-medium:  500;
+ 
+/* ─── Spacing ────────────────────────────── */
+  --space-1:  0.25rem;   /*  4px */
+  --space-2:  0.5rem;    /*  8px */
+  --space-3:  0.75rem;   /* 12px */
+  --space-4:  1rem;      /* 16px */
+  --space-5:  1.25rem;   /* 20px */
+  --space-6:  1.5rem;    /* 24px */
+  --space-8:  2rem;      /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+  --space-16: 4rem;      /* 64px */
+  --space-20: 5rem;      /* 80px */
+  --space-24: 6rem;      /* 96px */
+  --space-32: 8rem;      /* 128px */
+ 
+/* ─── Sizing ─────────────────────────────── */
+  --max-width-sm:   480px;
+  --max-width-md:   768px;
+  --max-width-lg:   1024px;
+  --max-width-xl:   1280px;
+  --max-width-2xl:  1440px;
+ 
+/* ─── Border Radius ──────────────────────── */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   16px;
+  --radius-xl:   24px;
+  --radius-full: 9999px;
+ 
+/* ─── Transitions ────────────────────────── */
+  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:    cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-inout: cubic-bezier(0.83, 0, 0.17, 1);
+ 
+  --duration-fast:   150ms;
+  --duration-base:   250ms;
+  --duration-slow:   400ms;
+  --duration-slower: 700ms;
+ 
+/* ─── Z-index ────────────────────────────── */
+  --z-below:   -1;
+  --z-base:     0;
+  --z-raised:   10;
+  --z-overlay:  100;
+  --z-modal:    200;
+  --z-toast:    300;
+  --z-top:      400;
 }
-
+ 
+ 
+/* ============================================
+   COLOR PALETTE — LIGHT MODE (default)
+   ============================================ */
+:root,
+[data-theme="light"] {
+ 
+  /* Canvas */
+  --color-bg:          white;
+  --color-bg-subtle:   #EDE9E3;
+  --color-bg-raised:   #FFFFFF;
+  --color-bg-overlay:  rgba(245, 242, 238, 0.85);
+ 
+  /* Text */
+  --color-text:        black;
+  --color-text-muted:  #6B6560;
+  --color-text-faint:  #A09890;
+  --color-text-invert: #F5F2EE;
+ 
+  /* Accent — warm terracotta */
+  --color-accent:        #C4521A;
+  --color-accent-subtle: #F0D5C5;
+  --color-accent-text:   #7A2F08;
+ 
+  /* Secondary accent — slate blue */
+  --color-secondary:        #3D5A80;
+  --color-secondary-subtle: #C8D8E8;
+ 
+  /* Borders */
+  --color-border:       rgba(26, 23, 20, 0.12);
+  --color-border-strong: rgba(26, 23, 20, 0.28);
+ 
+  /* Shadows */
+  --shadow-sm:  0 1px 3px rgba(26, 23, 20, 0.08),
+                0 1px 2px rgba(26, 23, 20, 0.06);
+  --shadow-md:  0 4px 12px rgba(26, 23, 20, 0.10),
+                0 2px 4px  rgba(26, 23, 20, 0.06);
+  --shadow-lg:  0 12px 32px rgba(26, 23, 20, 0.12),
+                0 4px 8px  rgba(26, 23, 20, 0.06);
+  --shadow-xl:  0 24px 64px rgba(26, 23, 20, 0.14);
+ 
+  /* Status */
+  --color-success: #2D7A4F;
+  --color-warning: #B87514;
+  --color-error:   #C0392B;
+}
+ 
+ 
+/* ============================================
+   COLOR PALETTE — DARK MODE
+   ============================================ */
 [data-theme="dark"] {
-  --color-bg: #111111;
-  --color-text: #f0f0f0;
+ 
+  /* Canvas */
+  --color-bg:          black;
+  --color-bg-subtle:   #1C1917;
+  --color-bg-raised:   #242018;
+  --color-bg-overlay:  rgba(20, 18, 16, 0.88);
+ 
+  /* Text */
+  --color-text:        white;
+  --color-text-muted:  #9C9288;
+  --color-text-faint:  #615A52;
+  --color-text-invert: #141210;
+ 
+  /* Accent — warm amber in dark */
+  --color-accent:        #E8834A;
+  --color-accent-subtle: #3A1F0E;
+  --color-accent-text:   #F5B48A;
+ 
+  /* Secondary accent */
+  --color-secondary:        #7BA7CC;
+  --color-secondary-subtle: #1A2E3F;
+ 
+  /* Borders */
+  --color-border:        rgba(237, 233, 226, 0.10);
+  --color-border-strong: rgba(237, 233, 226, 0.22);
+ 
+  /* Shadows — more diffuse in dark */
+  --shadow-sm:  0 1px 3px rgba(0, 0, 0, 0.24),
+                0 1px 2px rgba(0, 0, 0, 0.18);
+  --shadow-md:  0 4px 12px rgba(0, 0, 0, 0.32),
+                0 2px 4px  rgba(0, 0, 0, 0.20);
+  --shadow-lg:  0 12px 32px rgba(0, 0, 0, 0.40),
+                0 4px 8px  rgba(0, 0, 0, 0.24);
+  --shadow-xl:  0 24px 64px rgba(0, 0, 0, 0.52);
+ 
+  /* Status */
+  --color-success: #4CAF82;
+  --color-warning: #E0A832;
+  --color-error:   #E05C4B;
+}
+ 
+ 
+/* ============================================
+   SYSTEM PREFERENCE FALLBACK
+   Respects OS dark mode if no [data-theme] set
+   ============================================ */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg:          #141210;
+    --color-bg-subtle:   #1C1917;
+    --color-bg-raised:   #242018;
+    --color-bg-overlay:  rgba(20, 18, 16, 0.88);
+    --color-text:        #EDE9E2;
+    --color-text-muted:  #9C9288;
+    --color-text-faint:  #615A52;
+    --color-text-invert: #141210;
+    --color-accent:        #E8834A;
+    --color-accent-subtle: #3A1F0E;
+    --color-accent-text:   #F5B48A;
+    --color-secondary:        #7BA7CC;
+    --color-secondary-subtle: #1A2E3F;
+    --color-border:        rgba(237, 233, 226, 0.10);
+    --color-border-strong: rgba(237, 233, 226, 0.22);
+    --shadow-sm:  0 1px 3px rgba(0,0,0,.24), 0 1px 2px rgba(0,0,0,.18);
+    --shadow-md:  0 4px 12px rgba(0,0,0,.32), 0 2px 4px rgba(0,0,0,.20);
+    --shadow-lg:  0 12px 32px rgba(0,0,0,.40), 0 4px 8px rgba(0,0,0,.24);
+    --shadow-xl:  0 24px 64px rgba(0,0,0,.52);
+    --color-success: #4CAF82;
+    --color-warning: #E0A832;
+    --color-error:   #E05C4B;
+  }
 }
