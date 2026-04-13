@@ -10,14 +10,10 @@
   font-family: var(--font-body);
   line-height: var(--leading-normal);
   font-weight: var(--weight-regular);
-  color: var(--color-text);
   text-decoration: underline;
 }
 
-.body-link:hover{
-  color: grey;
-}
-
-.background-color{
-  background: var(--color-bg);
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
