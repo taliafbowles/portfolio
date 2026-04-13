@@ -17,3 +17,7 @@
 .body-link:hover{
   color: grey;
 }
+
+.background-color{
+  background: var(--color-bg);
+}
