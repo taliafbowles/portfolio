@@ -1,18 +1,18 @@
-.4xl {
+.xxxxl {
   font-size: var(--text-4xl);
   font-family: var(--font-display);
   line-height: var(--leading-normal);
   font-weight: var(--weight-medium);
 }
 
-.3xl {
+.xxxl {
   font-size: var(--text-3xl);
   font-family: var(--font-display);
   line-height: var(--leading-normal);
   font-weight: var(--weight-medium);
 }
 
-.2xl {
+.xxl {
   font-size: var(--text-2xl);
   font-family: var(--font-display);
   line-height: var(--leading-normal);
