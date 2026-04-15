@@ -17,6 +17,7 @@ a {
   font-weight: var(--weight-regular);
   color: var(--color-text);
   text-decoration: underline;
+  transition: filter var(--duration-base) var(--ease-out);
 }
 
 a:hover {
