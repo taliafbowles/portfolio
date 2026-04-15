@@ -20,5 +20,5 @@ a {
 }
 
 a:hover {
-    filter: blur(2p);
+    filter: blur(2px);
 }
