@@ -17,3 +17,12 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
 }
+
+a {
+  color: var(--color-text);
+  text-decoration: underline;
+}
+
+a:hover {
+    filter: blur(2p);
+}
