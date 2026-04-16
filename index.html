@@ -5,22 +5,22 @@
     <link rel="stylesheet" href="css/components/navbar.css" />
     <script src="js/components/navbar.js" defer></script>
     <script src="js/components/project-card.js"></script>
+
+    <script>
+    document.getElementById('project-card-1').innerHTML = createProjectCard({
+      href: 'View Resume',
+      image: 'resume.html',
+      year: '2026',
+      title: 'Test',
+      description: 'This is a test.',
+      tags: ['primary', 'system']
+    });
+    </script>
   </head>
   <body>
     <div id="nav"></div>
     <div id="project-card-1></div>
     <main>
-      <div id="cta"></div>
-<script>
-  document.getElementById('project-card-1').innerHTML = createProjectCard({
-    href: 'View Resume',
-    image: 'resume.html',
-    year: '2026',
-    title: 'Test',
-    description: 'This is a test.',
-    tags: ['primary', 'system']
-  });
-</script>
       <h1 class="text-4xl">4xl text example.</H1>
       <h2 class="text-3xl">3xl text example.</H2>
       <h3 class="text-2xl">2xl text example.</H3>
