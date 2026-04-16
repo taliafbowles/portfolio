@@ -1,4 +1,4 @@
-function createProjectCard({ href, image, alt, category, year, title, description, tags }) {
+function createProjectCard({ href, image, alt, title, description }) {
   return `
     <a class="card" href="${href}">
       <div class="card__image-wrap">
@@ -6,7 +6,6 @@ function createProjectCard({ href, image, alt, category, year, title, descriptio
       </div>
       <div class="card__body">
         <div class="card__meta">
-          <span class="card__category">${category}</span>
           <span class="card__year">${year}</span>
         </div>
         <h3 class="card__title">${title}</h3>
@@ -17,4 +16,5 @@ function createProjectCard({ href, image, alt, category, year, title, descriptio
       </div>
     </a>
   `;
+
 }
