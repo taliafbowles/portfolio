@@ -1,4 +1,4 @@
-class PrimaryItem extends HTMLElements {
+class PrimaryButton extends HTMLElements {
   constructor() {
     super()
     this.innerHTML = "Hi I am custom"
