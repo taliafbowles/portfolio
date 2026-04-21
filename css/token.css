@@ -12,11 +12,6 @@
   --text-3xl:  clamp(1.75rem,0.5rem + 3.125vw,2.5rem);
   --text-4xl:  clamp(2rem,0.5rem + 4.167vw,3rem);
  
-  --leading-tight:  1.1;
-  --leading-snug:   1.3;
-  --leading-normal: 1.6;
-  --leading-loose:  1.85;
- 
   --tracking-tight: -0.03em;
   --tracking-normal: 0em;
   --tracking-wide:  0.06em;
@@ -84,28 +79,14 @@
  
   /* Canvas */
   --color-bg:          white;
-  --color-bg-subtle:   #EDE9E3;
-  --color-bg-raised:   #FFFFFF;
-  --color-bg-overlay:  rgba(245, 242, 238, 0.85);
  
   /* Text */
   --color-text:        black;
-  --color-text-muted:  #6B6560;
-  --color-text-faint:  #A09890;
-  --color-text-invert: #F5F2EE;
+  --color-secondary-text: #656565;
  
-  /* Accent — warm terracotta */
-  --color-accent:        #C4521A;
-  --color-accent-subtle: #F0D5C5;
-  --color-accent-text:   #7A2F08;
- 
-  /* Secondary accent — slate blue */
-  --color-secondary:        #3D5A80;
-  --color-secondary-subtle: #C8D8E8;
- 
+  /* Accent */
+
   /* Borders */
-  --color-border:       rgba(26, 23, 20, 0.12);
-  --color-border-strong: rgba(26, 23, 20, 0.28);
  
   /* Shadows */
   --shadow-sm:  0 1px 3px rgba(26, 23, 20, 0.08),
@@ -130,28 +111,14 @@
  
   /* Canvas */
   --color-bg:          black;
-  --color-bg-subtle:   #1C1917;
-  --color-bg-raised:   #242018;
-  --color-bg-overlay:  rgba(20, 18, 16, 0.88);
  
   /* Text */
   --color-text:        white;
-  --color-text-muted:  #9C9288;
-  --color-text-faint:  #615A52;
-  --color-text-invert: #141210;
+  --color-secondaary-text: #AAA;
  
-  /* Accent — warm amber in dark */
-  --color-accent:        #E8834A;
-  --color-accent-subtle: #3A1F0E;
-  --color-accent-text:   #F5B48A;
- 
-  /* Secondary accent */
-  --color-secondary:        #7BA7CC;
-  --color-secondary-subtle: #1A2E3F;
- 
+  /* Accent */
+
   /* Borders */
-  --color-border:        rgba(237, 233, 226, 0.10);
-  --color-border-strong: rgba(237, 233, 226, 0.22);
  
   /* Shadows — more diffuse in dark */
   --shadow-sm:  0 1px 3px rgba(0, 0, 0, 0.24),
