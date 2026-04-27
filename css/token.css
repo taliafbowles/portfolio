@@ -1,0 +1,190 @@
+:root {
+  --font-display:  arial, serif;
+  --font-body:     arial, sans-serif;
+  --font-mono:     arial, monospace;
+ 
+  --text-xs:   clamp(0.8125rem,0.752875rem + .254vw,0.875rem);
+  --text-sm:   clamp(0.875rem,0.625rem + .781vw,1rem);
+  --text-base: 14px;
+  --text-lg:   18px;
+  --text-xl:   24px;
+  --text-2xl:  32px;
+  --text-3xl:  clamp(1.75rem,0.5rem + 3.125vw,2.5rem);
+  --text-4xl:  clamp(2rem,0.5rem + 4.167vw,3rem);
+
+  --lh-xs: 12px;
+  --lh-sm:14px;
+  --lh-base: 18px;
+  --lh-lg: 22px;
+  --lh-xl: 28px;
+  --lh-2xl: 36px;
+  --lh-3xl: 42px;
+  --lh-3xl: 46px;
+  
+  
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0em;
+  --tracking-wide:  0.06em;
+  --tracking-wider: 0.12em;
+ 
+  --weight-light:   300;
+  --weight-regular: 400;
+  --weight-medium:  500;
+ 
+/* ─── Spacing ────────────────────────────── */
+  --space-1:  0.25rem;   /*  4px */
+  --space-2:  0.5rem;    /*  8px */
+  --space-3:  0.75rem;   /* 12px */
+  --space-4:  1rem;      /* 16px */
+  --space-5:  1.25rem;   /* 20px */
+  --space-6:  1.5rem;    /* 24px */
+  --space-8:  2rem;      /* 32px */
+  --space-10: 2.5rem;    /* 40px */
+  --space-12: 3rem;      /* 48px */
+  --space-16: 4rem;      /* 64px */
+  --space-20: 5rem;      /* 80px */
+  --space-24: 6rem;      /* 96px */
+  --space-32: 8rem;      /* 128px */
+ 
+/* ─── Sizing ─────────────────────────────── */
+  --max-width-sm:   480px;
+  --max-width-md:   768px;
+  --max-width-lg:   1024px;
+  --max-width-xl:   1280px;
+  --max-width-2xl:  1440px;
+ 
+/* ─── Border Radius ──────────────────────── */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   24px;
+  --radius-full: 9999px;
+ 
+/* ─── Transitions ────────────────────────── */
+  --ease-out:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:    cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-inout: cubic-bezier(0.83, 0, 0.17, 1);
+ 
+  --duration-fast:   150ms;
+  --duration-base:   250ms;
+  --duration-slow:   400ms;
+  --duration-slower: 700ms;
+ 
+/* ─── Z-index ────────────────────────────── */
+  --z-below:   -1;
+  --z-base:     0;
+  --z-raised:   10;
+  --z-overlay:  100;
+  --z-modal:    200;
+  --z-toast:    300;
+  --z-top:      400;
+}
+ 
+ 
+/* ============================================
+   COLOR PALETTE — DEFAULT MODE
+   ============================================ */
+:root,
+[data-theme="default"] {
+ 
+  /* Canvas */
+  --color-bg-select: rgb(180, 180, 180);
+  --color-bg-main: rgb(255, 255, 255);
+ 
+  /* Text */
+  --on-bg-main-color-text:  rgb(0, 0, 0);
+  --on-bg-select-color-text: rgb(255, 255, 255);
+ 
+}
+ 
+ 
+/* ============================================
+   COLOR PALETTE — ONE MODE
+   ============================================ */
+[data-theme="one"] {
+ 
+  /* Canvas */
+  --color-bg-select: #fcb315;
+  --color-bg-main: #a36aa5;
+ 
+  /* Text */
+  --on-bg-main-color-text:        #006eb8;
+  --on-bg-select-color-text: #e31f26;
+}
+
+
+/* ============================================
+   COLOR PALETTE — TWO MODE
+   ============================================ */
+[data-theme="two"] {
+ 
+  /* Canvas */
+  --color-bg-select: #c7d14f;
+  --color-bg-main: #f8ed43;
+ 
+  /* Text */
+  --on-bg-main-color-text:        #40456a;
+  --on-bg-select-color-text: #0d1c43;
+}
+ 
+
+/* ============================================
+   COLOR PALETTE — THREE MODE
+   ============================================ */
+[data-theme="three"] {
+ 
+  /* Canvas */
+  --color-bg-select: #cab356;
+  --color-bg-main: #111314;
+ 
+  /* Text */
+  --on-bg-main-color-text:        #78cdd0;
+  --on-bg-select-color-text: #bb7125;
+}
+ 
+
+/* ============================================
+   COLOR PALETTE — four MODE
+   ============================================ */
+[data-theme="four"] {
+ 
+  /* Canvas */
+  --color-bg-select: #5a82b3;
+  --color-bg-main: #b6bfc1;
+ 
+  /* Text */
+  --on-bg-main-color-text:        #a36aa5;
+  --on-bg-select-color-text:  #ab2439;
+}
+
+
+/* ============================================
+   SYSTEM PREFERENCE FALLBACK
+   Respects OS dark mode if no [data-theme] set
+   ============================================ */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --color-bg:          #141210;
+    --color-bg-subtle:   #1C1917;
+    --color-bg-raised:   #242018;
+    --color-bg-overlay:  rgba(20, 18, 16, 0.88);
+    --color-text:        #EDE9E2;
+    --color-text-muted:  #9C9288;
+    --color-text-faint:  #615A52;
+    --color-text-invert: #141210;
+    --color-accent:        #E8834A;
+    --color-accent-subtle: #3A1F0E;
+    --color-accent-text:   #F5B48A;
+    --color-secondary:        #7BA7CC;
+    --color-secondary-subtle: #1A2E3F;
+    --color-border:        rgba(237, 233, 226, 0.10);
+    --color-border-strong: rgba(237, 233, 226, 0.22);
+    --shadow-sm:  0 1px 3px rgba(0,0,0,.24), 0 1px 2px rgba(0,0,0,.18);
+    --shadow-md:  0 4px 12px rgba(0,0,0,.32), 0 2px 4px rgba(0,0,0,.20);
+    --shadow-lg:  0 12px 32px rgba(0,0,0,.40), 0 4px 8px rgba(0,0,0,.24);
+    --shadow-xl:  0 24px 64px rgba(0,0,0,.52);
+    --color-success: #4CAF82;
+    --color-warning: #E0A832;
+    --color-error:   #E05C4B;
+  }
+}
