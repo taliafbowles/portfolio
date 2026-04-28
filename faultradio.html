@@ -1,0 +1,84 @@
+<html lang="en" data-theme="grey">
+    <head>
+    <link rel="stylesheet" href="css/token.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="study-container">
+        <div class="text-section">
+            <img class="study-img" src="assets/studies/faultradio/dover.svg">
+            <p class="text-eyebrow">2024</p>
+            <h1 class="text-2xl">Website Redesign, Fault Radio</h1>
+            <p class="text-base">Fault Radio is an internet radio station that hosts a regular streaming program and special events to champion the growth and visibility of up-and-coming local artists. Fault Radio moved to a new location in the mission district of the bay area in the summer of 2024. The move to a new location prompted a redesign of their website.</p>
+            <p class="text-base">I would like to callout that I made strategic use of AI to help bridge knowledge gaps during development, especially when working with the three APIs integrated into this website.</p>
+        </div>
+        <div class="text-section">
+          <h2 class="text-xl">Project purpose</h2>
+          <p class="text-base">The old website was hosted on Squarespace with the shop hosted on a separate Shopify site. The calendar was a static graphic that had to be updated manually each week or whenever updates to the schedule were made, so it was often inaccurate. Whenever there was no active Twitch stream, no other content was provided to replace that space.</p>
+        </div>
+        <div class="text-section">
+          <h2 class="text-xl">Measurable Impact</h2>
+          <p class="text-base">The updated design and build of the website requires very little maintenance to provide up-to-date content to listeners. Admin tasks no longer require team members to have web design or development experience. This means the Fault Radio team is much more easily able to provide value to it's listeners through the site.</p>
+          <ul class="text-xs">
+            <li>866 active users per month. Significant growth from 0 active users per month prior to the redesign.</li>
+            <li>"I think the schedule live is huge. People (artists) like seeing themselves on the site." Fault Radio team member</li>
+            <li>"The website looks great! So happy to finally see it up." Fault Radio team member</li>
+          </ul>
+        </div>
+        <div class="text-section">
+            <h2 class="text-xl">Old website</h2>
+            <div class="img-caption-container">
+            <img class="study-img" src="assets/studies/faultradio/oldhome.svg">
+            <p class="text-xs">Old home</p>
+          </div>
+          <div class="img-caption-container">
+            <img class="study-img" src="assets/studies/faultradio/oldcms.svg">
+            <p class="text-xs">Old CMS list</p>
+          </div>
+          <div class="img-caption-container">
+            <img class="study-img" src="assets/studies/faultradio/oldshop.svg">
+            <p class="text-xs">Old shop</p>
+          </div>
+        </div>
+        <div class="text-section">
+          <h2 class="text-xl">Redesign goals</h2>
+          <p class="text-base">The website redesign centered around providing more value to the station's listeners and streamlining the admin experience for Fault Radio's team. This could be achieved through:</p>
+          <ol class="text-xs">
+            <li>Cohesive look and feel that leverages a digital interpretation of the current brand guide</li>
+            <li>24/7 music content on site (live or archival)</li>
+            <li>Accurate event/programming calendar</li>
+            <li>Online shop that doesn't take users away from the main site</li>
+          </ol>
+        </div>
+        <div class="text-section">
+            <h2 class="text-xl">New website</h2>
+            <p class="text-base">The new website features station content 24/7. If there is no live twitch stream detected by the Twitch api, the site pulls from archived sets hosted on Youtube.</p>
+            <p class="text-base">Using the Google Calendar api, the site lists all calendar events 30 days from today's date. Whenever updates are made to the google calendar, those changes are immediately reflected upon page refresh.</p>
+            <div class="img-caption-container">
+            <img class="study-img" src="assets/studies/faultradio/newhome.svg">
+            <p class="text-xs">New home</p>
+          </div>
+          <p class="text-base">The CMS list page is populated using an intuitive authoring dialogue so anyone of Fault Radio's team can easily make updates with little to no web design experience.</p>
+          <div class="img-caption-container">
+            <img class="study-img" src="assets/studies/faultradio/newcms.svg">
+            <p class="text-xs">New CMS list</p>
+          </div>
+          <p class="text-base">The shop page is linked to the station's Shopify account using Shopify's storefront cart api. This strategy allowed for the most css customization, so the shop has a unified look and feel with the rest of the site while the admin is almost completely handled through the station's Shopify account.</p>
+          <div class="img-caption-container">
+            <img class="study-img" src="assets/studies/faultradio/newshop.svg">
+            <p class="text-xs">New shop</p>
+          </div>
+        <div class="theme-switcher">
+            <button class="swatch" data-set-theme="default"     title="default"></button>
+            <button class="swatch" data-set-theme="one"  title="one"></button>
+            <button class="swatch" data-set-theme="two"  title="two"></button>
+            <button class="swatch" data-set-theme="three" title="three"></button>
+            <button class="swatch" data-set-theme="four"  title="four"></button>
+        </div>
+        </div>
+    </main>
+  </body>
+</html>
