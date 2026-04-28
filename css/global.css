@@ -113,6 +113,7 @@ p {
 .study-container {
   max-width: 672px;
   margin: auto;
+  columns: var(--on-bg-main-color-text);
 }
 
 .img-caption-container {
@@ -209,7 +210,6 @@ p {
   width: 100%;
   padding: 16px;
   box-sizing: border-box;
-  background-color: var(--color-bg-select);
 }
 
 /* Type styles */
