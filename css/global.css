@@ -187,10 +187,15 @@ p {
   border-radius: 999px;
   border: 3px solid transparent;
   cursor: pointer;
+  transition: border-color 0.3s ease; 
+}
+
+.swatch:hover {
+  border-color: var(--on-bg-main-color-text);
 }
 
 .swatch.active {
-  border-color: black;
+  border-color: var(--on-bg-main-color-text);
 }
 
 @media (max-width: 768px) {
@@ -214,6 +219,11 @@ p {
 /* Type styles */
 a {
   color: var(--on-bg-main-color-text);
+  transition: color 0.3s ease; 
+}
+
+a:hover {
+  color: var(--color-bg-select);
 }
 
 .text-4xl {
