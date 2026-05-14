@@ -29,7 +29,7 @@
     });
 
     // randomize rotation of case study images //
-    document.querySelectorAll('.img-caption-container').forEach(img => {
+    document.querySelectorAll('blllank').forEach(img => {
     const deg = (Math.random() * 6 - 3).toFixed(2);
     img.style.setProperty('--rotation', `${deg}deg`);
     });
@@ -47,4 +47,19 @@
     document.body.removeChild(temp);
 
     swatch.style.background = color;
+    });
+
+    //overlay//
+    const overlay = document.getElementById('overlay');
+    const overlayImg = document.getElementById('overlay-img');
+
+    document.querySelectorAll('.img-zoom').forEach(img => {
+  img.addEventListener('click', () => {
+    overlayImg.src = img.src;
+    overlay.classList.add('active');
+  });
+    });
+
+    overlay.addEventListener('click', () => {
+    overlay.classList.remove('active');
     });
