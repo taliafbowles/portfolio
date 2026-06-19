@@ -209,6 +209,13 @@ ol {
   object-fit: contain;
 }
 
+.video-embed {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  object-fit: contain;
+}
+
 .text-section .text-base {
   padding-bottom: 16px;
 }
