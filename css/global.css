@@ -209,7 +209,7 @@ ol {
   object-fit: contain;
 }
 
-.video-embed {
+iframe {
   width: 100%;
   height: auto;
   margin: auto;
