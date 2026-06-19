@@ -216,6 +216,13 @@ iframe {
   object-fit: contain;
 }
 
+.video-embed {
+  display: flex;
+  height: 100%;
+  width: auto;
+  align-items: center;
+}
+
 .text-section .text-base {
   padding-bottom: 16px;
 }
