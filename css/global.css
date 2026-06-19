@@ -209,11 +209,12 @@ ol {
   object-fit: contain;
 }
 
-iframe {
+.thumbnail {
   width: 100%;
   height: auto;
   margin: auto;
   object-fit: contain;
+  aspect-ratio: 16 / 9;
 }
 
 .video-embed {
