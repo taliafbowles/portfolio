@@ -178,6 +178,11 @@ ol {
     aspect-ratio: 1 / 1;
     padding: 16 0;
     cursor: zoom-in;
+    transition: opacity 0.5s;
+}
+
+.work-grid-img:hover {
+  opacity: 80%;
 }
 
 .grid-link {
@@ -222,6 +227,11 @@ ol {
   height: 100%;
   width: auto;
   align-items: center;
+  transition: opacity 0.5s;
+}
+
+.video-embed:hover {
+  opacity: 80%;
 }
 
 .text-section .text-base {
