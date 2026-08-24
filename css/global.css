@@ -46,6 +46,12 @@ ol {
   transform: translateX(-200px);
 }
 
+.index-section-list {
+  display: flex;
+  row-gap: 6px;
+  flex-direction: column;
+}
+
 .insert-child {
   width: fit-content;
   display: flex;
